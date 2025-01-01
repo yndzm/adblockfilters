@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250101094902
-! Last modified: 2025/01/01 09:49:02
-! Blocked Filters: 42033
+! Version: 20250101162730
+! Last modified: 2025/01/01 16:27:30
+! Blocked Filters: 42037
 !
 #%#var AG_abortInlineScript=function(g,b,c){var d=function(){if("currentScript"in document)return document.currentScript;var a=document.getElementsByTagName("script");return a[a.length-1]},e=Math.random().toString(36).substr(2,8),h=d();AG_defineProperty(b,{beforeGet:function(){var a=d();if(a instanceof HTMLScriptElement&&a!==h&&""===a.src&&g.test(a.textContent))throw c&&console.warn("AdGuard aborted execution of an inline script"),new ReferenceError(e);}});var f=window.onerror;window.onerror=function(a){if("string"===typeof a&&-1!==a.indexOf(e))return c&&console.warn("AdGuard has caught window.onerror: "+b),!0;if(f instanceof Function)return f.apply(this,arguments)}};
 #%#var AG_abortOnPropertyRead=function(a,b){var c=Math.random().toString(36).substr(2,8);AG_defineProperty(a,{beforeGet:function(){b&&console.warn("AdGuard aborted property read: "+a);throw new ReferenceError(c);}});var d=window.onerror;window.onerror=function(e){if("string"===typeof e&&-1!==e.indexOf(c))return b&&console.warn("AdGuard has caught window.onerror: "+a),!0;if(d instanceof Function)return d.apply(this,arguments)}};
@@ -26301,6 +26301,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||redirector.gvt1.com/videoplayback/id/*/source/gfp_video_ads/$media,domain=poki-gdn.com|repuls.io
 @@||regapi.37.com/api/p_register.php?login_account=
 @@||renfei.net^$generichide
+@@||res.aidegelin.cn/dom2/js/app.js$domain=69xx03608.xyz
+@@||res.aidegelin.cn/dom2/js/com.js$domain=69xx03608.xyz
 @@||res.wx.qq.com/mmbizwap/$script
 @@||right.com.cn/forum/*300*250$image
 @@||rm.sina.com.cn/minisite/*/css/art_normal.css$domain=client.sina.cn
@@ -26631,6 +26633,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||teabox.com^$jsinject,elemhide
 @@||teambition.com^$jsinject,elemhide,extension
 @@||tech*.techradar.ink/*/?se=*&listing=$stealth=referrer
+@@||technews.tw/www/delivery/$badfilter
+@@||technews.tw^$generichide,badfilter
 @@||telegram.hr^$content
 @@||tenpay.com/v2/res/pub/cps/main/bottom_ad.js
 @@||tenpay.com^*?ADTAG=
@@ -29099,6 +29103,7 @@ codeplayer.vip,cupfox.app##.banner-box
 codepub.com##.small-banner
 coderutil.com##.head-recommend-adv
 coderutil.com##.search-module + a
+codexiu.cn##.blog-twitter:first-child
 coingape.com,dailyboulder.com,townflex.com##.quads-location
 coingraph.us,filext.com##.a
 coingraph.us,hosty.uprwssp.org##.b
@@ -36118,6 +36123,7 @@ techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.alead
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.rsidebar > div[style^="margin:0 auto"][style*="px auto; text-align:center;"]
 techmize.net,atravan.net#%#//scriptlet('prevent-xhr', 'adsbygoogle')
+technews.tw##.inside_AD
 techposts.org,findaudiobook.com,omgfoss.com###sidebar > #text-2
 techraptor.net,tftactics.gg###nn_player
 techraptor.net,unite-db.com###nn_lb1
@@ -41754,8 +41760,6 @@ zzzyk.com###Tinfo
 ||www.fuze-hill*.xyz^$popup
 ||www.fuze-sea*.xyz^
 ||www.fuze-sea*.xyz^$popup
-||www.fxxz.com/show/html/$subdocument
-||www.fxxz.com/skin/know/html/$subdocument
 ||www.google.*/adsense/search/ads.js
 ||www.greenxiazai.com/green/
 ||www.hexun.com/hxpage/index.html$subdocument
