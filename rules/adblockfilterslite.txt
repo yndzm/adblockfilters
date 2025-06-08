@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250608100834
-! Last modified: 2025/06/08 10:08:34
-! Blocked Filters: 42915
+! Version: 20250608162859
+! Last modified: 2025/06/08 16:28:59
+! Blocked Filters: 42878
 !
 ###AC_ad
 ###AD_160
@@ -23698,6 +23698,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 99.com.cn##.hzh_botleft
 99114.com##.indexcjgg
 995thewolf.com,newcountry963.com###simpleimage-3
+99meijutv.com##.follow-qrcode
 99tianji.com###banner_gg
 99tianji.com##.kf1
 9anime.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "ppu_")
@@ -25596,6 +25597,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||libs.baidu.com^$domain=11bqg.com|xbotaodz.com|0794.org|12zw.net|1biqu.com|1kans.net|23hh.com|23sk.net|23wxx.com|3yt.com|4xiaoshuo.net|56shuku.info|777zw.net|81book.com|99mk.net|aiwx.info|aixs.la|aikushuge.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biquka.com|aidu123.com|biqutsxs.com|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|gdbzkz.info|hongyeshuzhai.com|ibiquges.com|ibiquges.org|ibotaodz.org|imianhuatang.info|ishisetianxia.com|ishubao.org|xvipxs.net|iwurexs.info|ixs.la|lewenge.cc|liewenn.com|liudatxt.org|paoshu8.com|paoshuzw.com|pksge.com|qishuta.info|shu008.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|tutengzw.com|u33.cc|wenxuem.com|xbiquke.com|xdingdian.cc|xiaxs.info|xs5200.com|xszww8.net|xuanshu.org|xuessex.com|yqd6.com|yunxs.info|zjsw.org|zzs5.info
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||link1s.*^$stealth=referrer
+@@||linkedin.com/inbox/compose/dialog$document
 @@||liulanmi.com/wp-content/uploads/*/StatCounter-
 @@||liumingye.cn^$generichide
 @@||livew.l.qq.com/livemsg?pf=H5&ad$domain=m.v.qq.com
@@ -26623,7 +26625,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pubscholar.cn/static/common/fingerprint.js$script,~third-party
 @@||pv.sohu.com/cityjson$domain=ems.com.cn
 @@||pv.sohu.com/suv/
-@@||pythonmatplotlibtips.blogspot.com^$generichide
 @@||qccommunity.qcloudimg.com^$stealth=referrer,domain=cloud.tencent.com
 @@||qianpanso.cn/other/*.js$domain=cilimao.co|cilimao.one
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
@@ -26924,7 +26925,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static-*.xvideos.com/*/js/
 @@||static-v*.trbo.com^|
 @@||static.*.com/content/js/pubfig.*.js$domain=lightnovelpub.com|webnovelpub.com|lightnovelspot.com|lightnovelpub.vip
-@@||static.3001.net^$stealth=referrer,domain=freebuf.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=3dzip.org
 @@||static.doubleclick.net/instream/ad_status.js$domain=alliptvlinks.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=bloggingsathi.com
@@ -26996,8 +26996,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||teabox.com^$jsinject,elemhide
 @@||teambition.com^$jsinject,elemhide,extension
 @@||tech*.techradar.ink/*/?se=*&listing=$stealth=referrer
-@@||technews.tw/www/delivery/$badfilter
-@@||technews.tw^$generichide,badfilter
 @@||telegram.hr^$content
 @@||tenpay.com/v2/res/pub/cps/main/bottom_ad.js
 @@||tenpay.com^*?ADTAG=
@@ -27012,8 +27010,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||threatbook.cn/public/asset/js/zhugeIo.
 @@||thumbnail*.coupangcdn.com/thumbnails/$stealth=referrer,image
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
-@@||timesofindia.indiatimes.com/ad-banner-zedo^
-@@||timesofindia.indiatimes.com/ads_native_js^
 @@||tmall.com/add?
 @@||tmall.com/go/*/banner.php
 @@||tpc.googlesyndication.com/archive/$image,subdocument,xmlhttprequest,domain=adstransparency.google.com
@@ -27067,6 +27063,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||vfsglobal.*/*/Track/*^$stealth=donottrack|useragent|ip
 @@||video*.xhcdn.com/key=$stealth=referrer
 @@||video.weibocdn.com^$stealth=referrer
+@@||videos.tybito.com^$generichide
 @@||vidsrc.*/embed/$stealth=referrer
 @@||vip.sp-flv.com^*/?url=age_$subdocument,stealth=referrer
 @@||vipstatic.com/img/share/blank.png
@@ -33485,6 +33482,25 @@ link.technics-goods.info,mysafe.stisda.ac.id##.text-center > h3
 link1s.*###baolink1s
 link1s.com,scratch247.info,azsoft.*,downfile.site#%#//scriptlet("abort-current-inline-script", "document.getElementById", "style.display")
 linkdrop.net$@$script[tag-content="absda"]
+linkedin.com##.ad-banner-container
+linkedin.com##.feed-container > .feed-item > article[data-is-sponsored]
+linkedin.com##.feeds > ol#feed-container > li[data-sponsored-sequence-number]
+linkedin.com##.go-premium
+linkedin.com##.jserp-ad-container
+linkedin.com##.premium-search-upsell
+linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:activity:"]:has(.update-components-text-view > span[aria-hidden="true"]):not(:has(li-icon > svg))
+linkedin.com##article[data-is-sponsored]
+linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
+linkedin.com##li[data-is-sponsored="true"]
+linkedin.com#$#.ad-banner-container.is-header-zone { padding: 0 0 !important; }
+linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
+linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
+linkedin.com#?#.feed-shared-update-v2:has(.update-components-actor__sub-description:contains(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|الترويج/))
+linkedin.com#?#.msg-overlay-list-bubble__conversations-list:-abp-contains(Sponsored)
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__description:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__sub-description--tla:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
+linkedin.com#?#div.feed-shared-update-v2:-abp-has(span.update-components-actor__sub-description:-abp-contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
+linkedin.com#@#.ad-banner-container
 linkpoi.me,eririo.club,freshi.site#%#//scriptlet("set-constant", "disableItToContinue", "noopFunc")
 linkvertise.download,linkvertise.com###headerTopAd .ad-dp1-wrapper
 linovelib.com#$##byspider { display: none !important; }
@@ -33712,7 +33728,6 @@ magesypro.com,magesy.blog,majesy.org,magesy.eu,magesy.fr##div[id][class^="popup"
 magesypro.com,magesy.blog,majesy.org,magesy.eu,magesy.fr#%#//scriptlet("abort-current-inline-script", "onload", ".offsetHeight<=0")
 magesypro.com,magesy.blog,majesy.org,magesy.eu,magesy.fr#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'document.write')
 magesypro.com,magesy.blog,majesy.org,magesy.eu,magesy.fr#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
-magnet.so###AD
 maiche.com##a.some-img
 maidi.me###diy15
 mail.126.com,mail.163.com##.gWel-bottom
@@ -36743,7 +36758,6 @@ techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.alead
 techmaniak.pl,activemaniak.pl,gizmaniak.pl,agdmaniak.pl,rtvmaniak.pl,fotomaniak.pl,tabletmaniak.pl##.rsidebar > div[style^="margin:0 auto"][style*="px auto; text-align:center;"]
 techmize.net,atravan.net#%#//scriptlet('prevent-xhr', 'adsbygoogle')
-technews.tw##.inside_AD
 techposts.org,findaudiobook.com,omgfoss.com###sidebar > #text-2
 techpowerup.com#$?#body style:contains(/background-image: url[\s\S]*?display: block;[\s\S]*?@media[\s\S]*?transform:/) { remove: true; }
 techraptor.net,tftactics.gg###nn_player
@@ -36983,60 +36997,6 @@ timesofindia.com,indiatimes.com##div[data-aff-type]
 timesofindia.com,indiatimes.com##div[data-articlebody] [data-card="readAlso"]
 timesofindia.com,indiatimes.com##div[data-articlebody] div.mgid_second_mrec_parent:has(> div[id^="v-timesofindia-indiatimes"])
 timesofindia.com,indiatimes.com#?#div:has(> div[data-type="in_view"] > div.ctn-workaround-div)
-timesofindia.indiatimes.com###custom_ad_wrapper_0
-timesofindia.indiatimes.com###reverseads
-timesofindia.indiatimes.com##.ATF_mobile_ads
-timesofindia.indiatimes.com##.ATF_wrapper
-timesofindia.indiatimes.com##.CeUoi
-timesofindia.indiatimes.com##.addblock
-timesofindia.indiatimes.com##.adswebtopstories
-timesofindia.indiatimes.com##.asprime1
-timesofindia.indiatimes.com##.atfAdsLoading
-timesofindia.indiatimes.com##.clsplaceholder
-timesofindia.indiatimes.com##.ctn-workaround-div
-timesofindia.indiatimes.com##.d_jsH.mPws3
-timesofindia.indiatimes.com##.fixed_elements_on_page
-timesofindia.indiatimes.com##.fromaroundwebrhs
-timesofindia.indiatimes.com##.icNFc
-timesofindia.indiatimes.com##.imageBanner
-timesofindia.indiatimes.com##.main-paisa
-timesofindia.indiatimes.com##.mgid_second_mrec_parent
-timesofindia.indiatimes.com##.mid_ads
-timesofindia.indiatimes.com##.most-searched-section
-timesofindia.indiatimes.com##.nonAppView > .mPws3
-timesofindia.indiatimes.com##.paisa-wrapper
-timesofindia.indiatimes.com##.relatedVideoWrapper
-timesofindia.indiatimes.com##.rgt_ad
-timesofindia.indiatimes.com##.s_mrec_ads
-timesofindia.indiatimes.com##.shopping_times_wdgt
-timesofindia.indiatimes.com##.toi-amazon
-timesofindia.indiatimes.com##.topBand_adwrapper
-timesofindia.indiatimes.com##[data-aff-type]
-timesofindia.indiatimes.com##[data-contentprimestatus]
-timesofindia.indiatimes.com##[data-scrollga="spotlight_banner_widget"]
-timesofindia.indiatimes.com##[data-sp-click="stpPgtn(event)"]
-timesofindia.indiatimes.com##[onclick="stpPgtn(event)"]
-timesofindia.indiatimes.com##body .banner_local:not(.flexrest)
-timesofindia.indiatimes.com##div[data-articlebody] > div[data-type="in_view"]:has(> div[class] > #creditscoreiframe)
-timesofindia.indiatimes.com##div[data-cb="processCtnAds"]
-timesofindia.indiatimes.com##div[data-font] > div:has(> div[id^="div-gpt-"]:only-child)
-timesofindia.indiatimes.com##div[data-plugin="sticky11"] > .emptyAtfAdSlot + div[style="min-height: 250px;"]
-timesofindia.indiatimes.com##div[data-primead]
-timesofindia.indiatimes.com##div[id^="div-clmb-ctn"]
-timesofindia.indiatimes.com##div[style="min-height:250px; display:block!important"]
-timesofindia.indiatimes.com##iframe[id^="google_ads_iframe"]
-timesofindia.indiatimes.com##iframe[src^="https://timesofindia.indiatimes.com/amazonslider_"]
-timesofindia.indiatimes.com#$#.ad1 { position: absolute!important; left: -3000px!important; }
-timesofindia.indiatimes.com#$#div[style="min-height:250px; display:block!important"].paisa1 { position: absolute !important; left: -3000px !important; }
-timesofindia.indiatimes.com#%#//scriptlet("set-constant", "nsShowMaxCount", "0")
-timesofindia.indiatimes.com#?#.as_article > div.article_content > div[class*=" "]:has(> div > div > a[onclick])
-timesofindia.indiatimes.com#?#.clearfix > div[class^="_"]:has(> div.LazyLoad:first-child > div[id^="div-gpt-ad-"])
-timesofindia.indiatimes.com#?#.main-content > div.article_content~div[class*=" "]:has(> div > div > a[onclick])
-timesofindia.indiatimes.com#?#.main-content > div[style="display: none !important;"] ~ div:has(> div > div > a[onclick][rel="nofollow"] > span)
-timesofindia.indiatimes.com#?#.pmr:has(> div[class] > h2 > a[data-label="Sponsored"])
-timesofindia.indiatimes.com#?#.sidebar > .one-third.outer > style + div[class*=" "] > div[data-cb="processCtnAds"]:upward(2)
-timesofindia.indiatimes.com#?#.sidebar > div[class*=" "]:has(> div > div > a[onclick])
-timesofindia.indiatimes.com#?#div[class^="topBand_"] + div > div[class]:has(> div[id^="div-gpt-ad"])
 ting89.com,tingshuge.com##.banner250
 ting89.com,tingshuge.com##.banner688_1
 ting89.com,tingshuge.com##.banner688_2
@@ -39747,7 +39707,6 @@ zzzyk.com###Tinfo
 ||chengdu.cn/acts/phoneqss/openCornerWin/
 ||chengtu.com/api.php?mod=ad&adid=
 ||chengzijianzhan.cc^$subdocument,third-party
-||cherrynudes.com/t33638ba5008.js
 ||cheshi-img.com/js/pv.min.js
 ||chexun.com/delivery?
 ||chexun.net/images/sales//cxgg/
@@ -40084,7 +40043,6 @@ zzzyk.com###Tinfo
 ||dianxin.com^$third-party
 ||diaoyu123.com/cpro/show.js
 ||dict.youdao.com/vip/privilege/show/V*?bannerType=fanyiTop$domain=fanyi.youdao.com
-||dig.chouti.com/advert
 ||dimtown.com/adimg/
 ||dingxiang-inc.com/ctu-group/constid-js/index.js
 ||dioguitar23.*/images/*.gif
@@ -40549,7 +40507,6 @@ zzzyk.com###Tinfo
 ||hentaicomic.*/data/ds/
 ||hentaicomic.*/data/game/*/wap.gif
 ||hentaihaven.xxx^$referrerpolicy=origin
-||herogame.com^$subdocument,domain=gamer.com.tw
 ||hexun.*/hxpage/index.html
 ||hexun.com*/hx_news/hx_news_finalpage.js
 ||hexun.com/2017-11-07/191534592.jpg
@@ -41121,6 +41078,14 @@ zzzyk.com###Tinfo
 ||linecg.com/uploads/banner/
 ||link114.cn/template/js/showpics_
 ||linkbux.com/track?$popup
+||linkedin.com/apfc/collect$xmlhttprequest
+||linkedin.com/collect/
+||linkedin.com/countserv/count/$third-party
+||linkedin.com/li/track$xmlhttprequest
+||linkedin.com/litms/utag/
+||linkedin.com/platform-telemetry/
+||linkedin.com/sensorCollect/
+||linkedin.com/tscp-serving/
 ||linkexchange.
 ||linkhelper.cn/mmshow
 ||links.cn/mmshow
@@ -41817,7 +41782,6 @@ zzzyk.com###Tinfo
 ||read.amazon.*/uploadMetrics/
 ||real*traf.ru^
 ||realfinanceblogcenter.com^$badfilter
-||realitykings.com/vbanners/
 ||realstreamunited.tv/*/pu.js^
 ||redirector.gvt1.com/videoplayback/id/*/source/gfp_video_ads/$media,redirect=noopmp4-1s,domain=poki-gdn.com|repuls.io,important
 ||redmx.cn^$third-party
@@ -42307,9 +42271,9 @@ zzzyk.com###Tinfo
 ||tigtag.com/images/*1000x
 ||tigtag.com/images/pic1/
 ||tigtag.com/styles/phpcms/js/tigtag/ads.js
+||tiktokv.us/monitor_browser/
 ||timecn.cn/image/alipay.jpg
 ||timeout.*/static/js/ads-
-||timesofindia.indiatimes.com/amazonslider_
 ||tingchina.com/images/aibaoliang.gif
 ||tingchina.com/js/*220-
 ||tingchina.com/js/760
@@ -42596,7 +42560,6 @@ zzzyk.com###Tinfo
 ||wumii.com/images/pixel.png
 ||www.*yydstxt*/js/cdn.js
 ||www.1905.com/uploadfile/2024/0401/20240401094429405834.jpg^$image
-||www.1ting.com/$subdocument
 ||www.4399.com/loadimg/iframe_$subdocument
 ||www.91danji.com/js/$script
 ||www.aiqu*.com/da/*.js
