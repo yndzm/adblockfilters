@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250814002824
-! Last modified: 2025/08/14 00:28:24
-! Blocked Filters: 42599
+! Version: 20250814100256
+! Last modified: 2025/08/14 10:02:56
+! Blocked Filters: 42602
 !
 ###AC_ad
 ###AD_160
@@ -12835,6 +12835,7 @@
 ##.push-adv
 ##.push-bottom-container[clickmode="cpt"]
 ##.push-slider[clickmode="cpt"]
+##.push-top[clickmode="cpt"]
 ##.pushDownAd
 ##.pushdown-ad
 ##.pushdownAd
@@ -23143,6 +23144,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1905.com,news.ltn.com.tw,commonhealth.com.tw,health.tvbs.com.tw,idreamx.com,xchina.co,manhuafen.com,world68.com##.ad
 1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.media
 1909.me,8se.me,crxs.me,xchina.biz,xchina.co##.push-top
+1909.me,8se.me,crxs.me,xchina.site,xchina.biz,xchina.co##.media
 192-168-1-1-ip.co,receivesms.co###adresp
 194.163.183.129#$##myVideo[onclick="goVideoAds();"] { display: none !important; }
 194.163.183.129#$##player_embed { visibility: visible !important; }
@@ -36909,6 +36911,7 @@ turystyka.wp.pl,opinie.wp.pl,gry.wp.pl,moto.wp.pl,gwiazdy.wp.pl,tech.wp.pl,kobie
 tutorialsduniya.com,sonyalpharumors.com###custom_html-41
 tutorialsplanet.net#$?#.better-ads-listitemad { remove: true; }
 tuttoandroid.net,tuttotech.net##body .banner:not(#style_important)
+tuttoandroid.net,tuttotech.net##div[class^="widofferte23-"]
 tuttotech.net,tuttoandroid.net##.article-banner-container
 tuttotech.net,tuttoandroid.net#?#.container .card > span.ribbon:contains(Adv):upward(1)
 tuwan.com##.Player-zan
