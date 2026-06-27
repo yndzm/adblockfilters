@@ -3,9 +3,9 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260627015534
-! Last modified: 2026/06/27 01:55:34
-! Blocked Filters: 103045
+! Version: 20260627115812
+! Last modified: 2026/06/27 11:58:12
+! Blocked Filters: 103048
 !
 ###AC_ad
 ###AD_160
@@ -14428,7 +14428,6 @@
 ##IMG[onclick*="bucd.lol"]
 ##IMG[onclick='godown()'][src$='gif']
 ##IMG[onclick='golh()'][src$='.gif']
-##IMG[referrerpolicy='no-referrer'][src$='.gif'][width='100%']
 ##IMG[referrerpolicy='no-referrer'][style='box-sizing: border-box;height:calc(10vh); width:100%;padding: 0px 15px 10px 15px;']
 ##IMG[src$='.dl'][style='width:100% !important;height:90px'][onclick]
 ##IMG[src$='tywheying/vv2-960x80.gif']
@@ -42955,6 +42954,7 @@ chaseyoursport.com##.side-adv-block-blog-open
 chatelaine.com##.assmbly-ad-text
 chatelaine.com,fashionmagazine.com##.assmbly-ad-wrapper
 chatgpt.com##.border-token-border-default.mt-2.border-t:has(button[aria-label="Ad options"])
+chatgpt.com##[data-testid="bazaar-v2-elevated-box"]:has([data-ad-card-root="true"])
 chatgpt.com##div[class]:has(> button[class] > span.text-nowrap > svg.icon-sm > use[href="/cdn/assets/sprites-core-fxfgsfqf.svg#d3876b"])
 chatgpt.com##div[class]:has(> div.flex > button[aria-label="Ad options"])
 chatgpt.com##div[data-testid] div[class^="max-"] > div[data-ad-card-root]
@@ -88488,6 +88488,7 @@ zzzyk.com###Tinfo
 ||birdsend.co/assets/static/js/pixel/
 ||birdsend.email/pixel
 ||birdsend.net/pixel
+||bis.org/metrics/web.gif?
 ||bisecthosting.com/partners/custom-banners/$third-party
 ||bistream.xyz/js/loader.js
 ||bit.ly/2FQyhNq$subdocument
@@ -95833,6 +95834,7 @@ zzzyk.com###Tinfo
 ||moreamateurs.com/v/image.php
 ||morfo.*.amazonaws.com/*/banner_*.gif$domain=sciaga.pl
 ||morfo.*.amazonaws.com/*/screning-*_*.jpg$domain=sciaga.pl
+||morningstar.com/api/v1/analytics
 ||mortgagecentres.net/banner.gif
 ||moshimo.com^$third-party
 ||moshimo.com^*/impression?
@@ -98755,6 +98757,7 @@ zzzyk.com###Tinfo
 ||segmentfault.com/sponsor/
 ||segmentnext.com/LhfdY3JSwVQ8.js
 ||seir-sanduk.com/adblockaclib.js
+||seismic.com/playerservice/api/v1/log?
 ||selectika.com/selectika-pixel.min.js
 ||seller-log-collector.shopee.
 ||sellpoint.net^$third-party
