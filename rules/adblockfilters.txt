@@ -3,8 +3,8 @@
 ! Description: 适用于AdGuard的去广告合并规则，每8个小时更新一次。规则源：1Hosts (Lite)、AdGuard Base filter、AdGuard Base filter、AdGuard DNS filter、AdRules DNS List、Hblock、OISD Basic、1024 hosts、ad-wars hosts、StevenBlack hosts、xinggsf、EasyList、Easylist China、EasyPrivacy、CJX's Annoyance List、SmartTV Blocklist、AWAvenue Ads Rule、jiekouAD。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260829040735
-! Last modified: 2026/08/29 04:07:35
+! Version: 20260829143604
+! Last modified: 2026/08/29 14:36:04
 ! Blocked Filters: 104617
 !
 ###AC_ad
@@ -38138,7 +38138,6 @@ analdin.com##body[style="background: #000000; margin: 0; padding: 0"]:not([class
 analdin.com,cockdude.com,coomer.st,fapcat.com,gelbooru.com,kemono.cr,official.coomer.com.co##a[href*="/tsyndicate.com/"]
 analdin.com,streamporn.pw#%#//scriptlet("abort-on-property-read", "popunder")
 analdin.xxx###lj-container
-analdin.xxx##.banner-top
 analdin.xxx##div[style="position: absolute; inset: 0px; overflow: hidden; background: transparent; display: block;"]
 analdin.xxx##div[style^="text-align:"][style*="width: 950px;"]
 analdin.xxx##iframe[src*="lovelybingo.com/"]
@@ -76802,6 +76801,7 @@ streamingsites.com##div[class^="styles_adverticementBlock_"]
 streamingsites.com#?#.card-list > .card > aside > .OUTBRAIN:upward(2)
 streamingsites.com#?#.thumbs-inner > .wn-brand:not(:has(>a[href="https://streamingsites.com/reddit-streaming-sites/"]))
 streamingsites.com,torrentsites.com##.block-vpn
+streamiz.lol,analdin.xxx##.banner-top
 streamlive.to###ad_footer
 streamlive.to###ad_overlay
 streamlive.to###clickablelink
@@ -77883,6 +77883,7 @@ techradar.com##.hawk-multi-model-review-container
 techradar.com##.hawk-nest
 techradar.com##.listingResult:has(> .sponsored-post:only-child)
 techradar.com##.slot-leaderboard
+techradar.com##aside.ecom-root
 techradar.com##div[class^="slot-attemp-slot-"][style^="position: relative; box-sizing: border-box; height:"]
 techradar.com##div[class^="slot-double-height-"][style^="position: relative; box-sizing: border-box; height:"]
 techradar.com##div[class^="slot-mpu"][style^="position: relative; box-sizing: border-box; height:"]
@@ -103551,7 +103552,6 @@ zzzyk.com###Tinfo
 ||wpa.b.qq.com/cgi/wpa.php?
 ||wpdaxue.com/img/*/txy-
 ||wpengine.com/wp-json/api/advanced_placement/api-in-article-ad/
-||wpengine.com/wp-json/api/advanced_placement/new-in-article/?type=placement^$domain=androidauthority.com
 ||wpimg.pl/a/i/stg/wpjslib_*.js$replace=/((display:\\s\*)none(\\s\*!important)|((\.hostname;function .\(\)|\,.=function\(\))\{return) .===[\S]*?(\}))/\$2\$3\$4\$6/,script
 ||wples.com/pc/common.js
 ||wpzoom.com/images/aff/
